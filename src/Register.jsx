@@ -103,20 +103,28 @@ const Register = () => {
         <input
           type="password"
           id="password"
-          ref={}
-          autoComplete="off"
-          onChange={(e) => setUser(e.target.value)}
-          value={user}
+          onChange={(e) => setPwd(e.target.value)}
+          value={pwd}
           required
-          aria-invalid={validName ? "false" : "true"}
+          aria-invalid={validPwd ? "false" : "true"}
           aria-describedby="uidnote"
-          onFocus={() => setUserFocus(true)}
-          onBlur={() => setUserFocus(false)}
+          onFocus={() => setPwdFocus(true)}
+          onBlur={() => setPwdFocus(false)}
         />
-        Must inculde Uppercase and Lowercase Letter, a special character and a
+        <p
+          id="uidnote"
+          className={
+            userFocus && user && !validName ? "instruction" : "offscreen"
+          }
+        >
+          <FontAwesomeIcon icon={faInfocircle} />
+          8 to 24 characters.
+          <br />
+          Must inculde Uppercase and Lowercase Letter, a special character and a
         number.
         <br />
         Allowed special character:
+        </p>
       </form>
     </>
   );
