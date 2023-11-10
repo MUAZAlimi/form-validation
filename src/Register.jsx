@@ -41,9 +41,8 @@ const Register = () => {
 
   return (
     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">
-        {errMsg}
-    </p>
-       
+        {errMsg} </p>
+        
   )
 }
 
