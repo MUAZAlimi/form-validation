@@ -17,7 +17,7 @@ const Register = () => {
 
     const [Pwd, setPwd] = useState('') 
     const [validPwd, setValidPwd] = useState(false)
-    const [matchFocus, setMatchFocus] = useState(false)
+    const [pwdFocus, setPwdFocus] = useState(false)
 
     const [errMsg, setErrMsg] = useState("")
     const [success, setSuccess] = useState(false)
