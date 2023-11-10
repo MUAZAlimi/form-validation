@@ -1,11 +1,10 @@
-import Register from './Register'
-import React from 'react'
+// import Register from './Register'
 
 const App = () => {
   return (
-    <div>
+    <main>
       
-    </div>
+    </main>
   )
 }
 
