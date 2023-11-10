@@ -37,7 +37,7 @@ const Register = () => {
     }, [pwd, matchPwd])
     useEffect(() => {
         setErrMsg("")
-    }, [])
+    }, [user, pwd, matchPwd])
 
   return (
     
