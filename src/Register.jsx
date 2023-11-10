@@ -40,7 +40,7 @@ const Register = () => {
     }, [user, pwd, matchPwd])
 
   return (
-    <p ref={errRef} className={errMsg ? "errmg" : "offscreen"}>
+    <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}>
         <form>
             <label>
 
