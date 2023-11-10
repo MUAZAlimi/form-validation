@@ -89,6 +89,17 @@ const Register = () => {
           Must begin with a letter <br />
           number, underscore, hyphens Allowed
         </p>
+        <label htmlFor="username">
+          username:
+          <FontAwesomeIcon
+            icon={faCheck}
+            className={validMatch && matchPwd ? "valid" : "hide"}
+          />
+          <FontAwesomeIcon
+            icon={faTimes}
+            className={validMatch || matchPwd ? "hide" : "invalid"}
+          />
+        </label>
         Must inculde Uppercase and Lowercase Letter, a special character and a
         number.
         <br />
