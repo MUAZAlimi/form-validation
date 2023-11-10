@@ -90,7 +90,7 @@ const Register = () => {
           number, underscore, hyphens Allowed
         </p>
         <label htmlFor="username">
-          username:
+            password: 
           <FontAwesomeIcon
             icon={faCheck}
             className={validMatch && matchPwd ? "valid" : "hide"}
