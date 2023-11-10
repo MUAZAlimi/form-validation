@@ -77,7 +77,7 @@ const Register = () => {
           onFocus={() => setUserFocus(true)}
           onBlur={() => setUserFocus(false)}
         />
-        <p id="uidnote" className="">
+        <p id="uidnote" className={userFocus}>
 
         </p>
       </form>
