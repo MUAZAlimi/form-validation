@@ -33,7 +33,7 @@ const Register = () => {
         setValidName(USER_REGEX.text(user))
     }, [user])
     useEffect(() => {
-        setValidPwd
+        setValidPwd()
     }, [])
 
   return (
