@@ -40,10 +40,10 @@ const Register = () => {
     }, [user, pwd, matchPwd])
 
   return (
-    <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}>
+    <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">
         <form>
             <label>
-
+                
             </label>
         </form>
     </p>
