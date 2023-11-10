@@ -44,6 +44,7 @@ const Register = () => {
   }, [user, pwd, matchPwd]);
 
   return (
+   <>
     <p
       ref={errRef}
       className={errMsg ? "errmsg" : "offscreen"}
@@ -51,6 +52,8 @@ const Register = () => {
     >
       {errMsg}{" "}
     </p>
+    <form></form>
+   </>
   );
 };
 
