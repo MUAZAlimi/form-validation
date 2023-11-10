@@ -10,9 +10,10 @@ const REGISTER_URL = "/register"
 const Register = () => {
     const userRef = useRef()
     const errRef = useRef()
+
     const [user, setUser] = useState('')
     const [validName, setValidName] = useState(false)
-    const [pwdFocus, setPwdFocus] = useState(false)
+    const [userFocus, setUserFocus] = useState(false)
 
     const [matchPwd, setMatchPwd] = useState('') 
     const [validPwd, setValidPwd] = useState(false)
