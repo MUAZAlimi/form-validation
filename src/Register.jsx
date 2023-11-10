@@ -22,8 +22,8 @@ const Register = () => {
     const [success, setSuccess] = useState(false)
 
     useEffect(() => {
-        
-    }, [third])
+        useRef.current.focus
+    }, [])
     
 
   return (
