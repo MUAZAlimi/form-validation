@@ -10,7 +10,9 @@ const REGISTER_URL = "/register"
 const Register = () => {
     const userRef = useRef()
     const errRef = useRef()
-    
+
+    const [user, setUser] = useState('')
+
   return (
 
   )
