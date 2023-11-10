@@ -3,4 +3,4 @@ import {faCheck, faTimes, faInfocircle} from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "./api/axios"
 
-const USER_REGEX = /^[A-Z][A-Z0-9-_]{3,23}$
+const USER_REGEX = /^[A-Z][A-Z0-9-_]{3,23}$/;
