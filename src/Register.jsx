@@ -75,6 +75,7 @@ const Register = () => {
           aria-invalid={validName ? "false" : "true"}
           aria-describedby="uidnote"
           onFocus={() => setUserFocus(true)}
+          onBlur={() => setUserFocus(false)}
         />
       </form>
     </>
