@@ -40,8 +40,12 @@ const Register = () => {
     }, [user, pwd, matchPwd])
 
   return (
-    <p ref={errRef} className="">
+    <p ref={errRef} className={errMsg ? "errmg" : "offscreen"}>
+        <form>
+            <label>
 
+            </label>
+        </form>
     </p>
   )
 }
