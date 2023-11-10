@@ -53,8 +53,8 @@ const Register = () => {
       {errMsg}{" "}
     </p>
     <form>
-        <label>
-            
+        <label htmlFor="username">
+            username
         </label>
     </form>
    </>
