@@ -56,7 +56,9 @@ button,
 textarea {
   font-family: "Nunito", sans-serif;
   font-size: 22px;
-  padding: 0.25rem;
+  border: none;
+  outline: none;
+  padding: 0.45rem;
   border-radius: 0.5rem;
 }
 

@@ -2,10 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import {
   faCheck,
   faTimes,
-  faInfocircle,
-} from "@fortawesome/fontawesome-svg-core";
+  faInfoCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import axios from "./api/axios";
+// import axios from "./api/axios";
 
 const USER_REGEX = /^[A-Z][a-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -31,7 +31,7 @@ const Register = () => {
   const [success, setSuccess] = useState(false);
 
   useEffect(() => {
-    useRef.current.focus();
+    userRef.current.focus();
   }, []);
   useEffect(() => {
     setValidName(USER_REGEX.test(user));
@@ -83,7 +83,7 @@ const Register = () => {
             userFocus && user && !validName ? "instruction" : "offscreen"
           }
         >
-          <FontAwesomeIcon icon={faInfocircle} />
+          <FontAwesomeIcon icon={faInfoCircle} />
           3 to 23 characters.
           <br />
           Must begin with a letter <br />
@@ -113,17 +113,21 @@ const Register = () => {
         />
         <p
           id="uidnote"
-          className={
-            userFocus && user && !validName ? "instruction" : "offscreen"
-          }
+          className={pwdFocus && !validPwd ? "instructions" : "offscreen"}
         >
-          <FontAwesomeIcon icon={faInfocircle} />
+          <FontAwesomeIcon icon={faInfoCircle} />
           8 to 24 characters.
           <br />
           Must inculde Uppercase and Lowercase Letter, a special character and a
           number.
           <br />
-          Allowed special character:
+          Allowed special character:<span aria-label="exclamation mark">
+            !
+          </span>{" "}
+          <span aria-label="at symbol">@</span>
+          <span aria-label="hastag">#</span>{" "}
+          <span aria-label="dollar sign">$</span>{" "}
+          <span aria-label="percent">%</span>
         </p>
       </form>
     </>
