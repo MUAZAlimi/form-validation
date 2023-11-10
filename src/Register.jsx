@@ -19,7 +19,7 @@ const Register = () => {
   const [validName, setValidName] = useState(false);
   const [userFocus, setUserFocus] = useState(false);
 
-  const [Pwd, setPwd] = useState("");
+  const [pwd, setPwd] = useState("");
   const [validPwd, setValidPwd] = useState(false);
   const [pwdFocus, setPwdFocus] = useState(false);
 
@@ -64,12 +64,13 @@ const Register = () => {
             className={validMatch || matchPwd ? "hide" : "invalid"}
           />
         </label>
-        <input type="password" 
-            id="password"
-            onChange={(e) => setPwd(e.target.value)}
-            value={pwd}
-            placeholder="Password"
-            autoComplete="n"
+        <input type="text" 
+            id="username"
+            ref={userRef}
+            autoComplete="off"
+            onChange={(e) => setUser(e.target.value)}
+            value={user}
+            placeholder=""
             required    
         />
       </form>
