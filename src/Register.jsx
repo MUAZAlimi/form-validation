@@ -55,7 +55,8 @@ const Register = () => {
     <form>
         <label htmlFor="username">
             username:
-            
+            <FontAwesomeIcon  icon={faCheck} className={validMatch && matchPwd ? "valid" : "hide"} />
+            <FontAwesomeIcon  icon={faTimes} className={validMatch && matchPwd ? "hide" : "invalid"} />
         </label>
     </form>
    </>
