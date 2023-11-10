@@ -69,7 +69,8 @@ const Register = () => {
             onChange={(e) => setPwd(e.target.value)}
             value={pwd}
             placeholder="Password"
-                
+            autoComplete="n"
+            required    
         />
       </form>
     </>
