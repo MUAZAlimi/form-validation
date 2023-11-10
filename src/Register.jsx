@@ -9,9 +9,7 @@ const REGISTER_URL = "./register"
 
 const Register = () => {
   return (
-    <div>
-      
-    </div>
+    
   )
 }
 
