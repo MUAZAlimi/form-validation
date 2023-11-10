@@ -54,7 +54,8 @@ const Register = () => {
     </p>
     <form>
         <label htmlFor="username">
-            username
+            username:
+            
         </label>
     </form>
    </>
