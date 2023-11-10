@@ -8,7 +8,8 @@ const PWD_REGEX = /^(?=.*[a-z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/
 const REGISTER_URL = "/register"
 
 const Register = () => {
-    const userRef = 
+    const userRef = useRef()
+    const errRef = useRef()
   return (
 
   )
