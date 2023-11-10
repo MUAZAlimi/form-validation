@@ -40,7 +40,9 @@ const Register = () => {
     }, [user, pwd, matchPwd])
 
   return (
-    
+    <p>
+        
+    </p>
   )
 }
 
