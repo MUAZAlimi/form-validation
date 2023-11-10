@@ -30,11 +30,11 @@ const Register = () => {
         useRef.current.focus()
     }, [])
     useEffect(() => {
-        setValidName(USER_REGEX.text(user))
+        setValidName(USER_REGEX.test(user))
     }, [user])
     useEffect(() => {
-        setValidPwd()
-    }, [])
+        setValidPwd(PWD_REGEX.test(pwd))
+    }, [pwd, ])
 
   return (
     
