@@ -1,9 +1,9 @@
-// import Register from './Register'
+import Register from './Register'
 
 const App = () => {
   return (
     <main className="App">
-      
+      <Register />
     </main>
   )
 }
