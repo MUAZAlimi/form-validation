@@ -84,6 +84,9 @@ const Register = () => {
           }
         >
           <FontAwesomeIcon icon={faInfocircle} />
+          8 to 24 characters.<br />Must inculde Uppercase and Lowercase Letter, a special character and a number.<br />
+                Allowed special character:
+                
         </p>
       </form>
     </>
