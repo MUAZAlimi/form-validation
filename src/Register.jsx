@@ -77,6 +77,9 @@ const Register = () => {
           onFocus={() => setUserFocus(true)}
           onBlur={() => setUserFocus(false)}
         />
+        <p>
+            
+        </p>
       </form>
     </>
   );
