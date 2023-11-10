@@ -90,14 +90,14 @@ const Register = () => {
           number, underscore, hyphens Allowed
         </p>
         <label htmlFor="password">
-            password: 
+          password:
           <FontAwesomeIcon
             icon={faCheck}
-            className={validPwd  ? "valid" : "hide"}
+            className={validPwd ? "valid" : "hide"}
           />
           <FontAwesomeIcon
             icon={faTimes}
-            className={validPwd || !pwd  ? "hide" : "invalid"}
+            className={validPwd || !pwd ? "hide" : "invalid"}
           />
         </label>
         <input
@@ -121,9 +121,9 @@ const Register = () => {
           8 to 24 characters.
           <br />
           Must inculde Uppercase and Lowercase Letter, a special character and a
-        number.
-        <br />
-        Allowed special character:
+          number.
+          <br />
+          Allowed special character:
         </p>
       </form>
     </>
