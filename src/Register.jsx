@@ -23,7 +23,8 @@ const Register = () => {
 
     const [errMsg, setErrMsg] = useState("")
     const [success, setSuccess] = useState(false)
-    const [validMatch, setValidMatch] = useState()
+    const [validMatch, setValidMatch] = useState(false)
+    const [matchFocus, setMatchFocus] = useState(false)
 
     useEffect(() => {
         useRef.current.focus()
