@@ -40,8 +40,8 @@ const Register = () => {
     }, [user, pwd, matchPwd])
 
   return (
-    <p>
-        
+    <p ref={errRef} className="">
+
     </p>
   )
 }
