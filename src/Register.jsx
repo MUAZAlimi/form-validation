@@ -24,6 +24,9 @@ const Register = () => {
     useEffect(() => {
         useRef.current.focus()
     }, [])
+    useEffect(() => {
+        setValidName(USER_REGEX.text(user))
+    }, [])
     
 
   return (
