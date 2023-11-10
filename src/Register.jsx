@@ -19,6 +19,7 @@ const Register = () => {
     const [matchFocus, setMatchFocus] = useState(false)
 
     const [errMsg, setErrMsg] = useState("")
+    const [success, setSuccess] = useState(false)
 
   return (
     
