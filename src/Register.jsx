@@ -72,6 +72,7 @@ const Register = () => {
           onChange={(e) => setUser(e.target.value)}
           value={user}
           required
+          aria-invalid={validName ? "false" : "true"}
         />
       </form>
     </>
