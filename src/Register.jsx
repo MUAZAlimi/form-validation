@@ -12,9 +12,10 @@ const Register = () => {
     const errRef = useRef()
     const [user, setUser] = useState('')
     const [validName, setValidName] = useState(false)
+    const [pwdFocus, setPwdFocus] = useState(false)
 
   return (
-
+    
   )
 }
 
