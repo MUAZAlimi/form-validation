@@ -21,6 +21,11 @@ const Register = () => {
     const [errMsg, setErrMsg] = useState("")
     const [success, setSuccess] = useState(false)
 
+    useEffect(() => {
+        
+    }, [third])
+    
+
   return (
     
   )
