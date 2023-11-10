@@ -89,7 +89,7 @@ const Register = () => {
           Must begin with a letter <br />
           number, underscore, hyphens Allowed
         </p>
-        <label htmlFor="username">
+        <label htmlFor="password">
             password: 
           <FontAwesomeIcon
             icon={faCheck}
