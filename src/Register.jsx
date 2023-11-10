@@ -80,7 +80,7 @@ const Register = () => {
         <p
           id="uidnote"
           className={
-            userFocus && user && !validName ? "instruction" : "offscreen"
+            userFocus && user && !validName ? "instructions" : "offscreen"
           }
         >
           <FontAwesomeIcon icon={faInfoCircle} />
