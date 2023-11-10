@@ -93,11 +93,11 @@ const Register = () => {
             password: 
           <FontAwesomeIcon
             icon={faCheck}
-            className={validMatch && matchPwd ? "valid" : "hide"}
+            className={validPwd && matchPwd ? "valid" : "hide"}
           />
           <FontAwesomeIcon
             icon={faTimes}
-            className={validMatch || matchPwd ? "hide" : "invalid"}
+            className={validPwd || matchPwd ? "hide" : "invalid"}
           />
         </label>
         Must inculde Uppercase and Lowercase Letter, a special character and a
