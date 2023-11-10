@@ -97,7 +97,7 @@ const Register = () => {
           />
           <FontAwesomeIcon
             icon={faTimes}
-            className={validPwd  ? "hide" : "invalid"}
+            className={!pwd  ? "hide" : "invalid"}
           />
         </label>
         Must inculde Uppercase and Lowercase Letter, a special character and a
