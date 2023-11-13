@@ -61,7 +61,7 @@ const Register = () => {
           />
           <FontAwesomeIcon
             icon={faTimes}
-            className={validMatch || !user ? "hide" : "invalid"}
+            className={validName || !user ? "hide" : "invalid"}
           />
         </label>
         <input
