@@ -57,11 +57,11 @@ const Register = () => {
           username:
           <FontAwesomeIcon
             icon={faCheck}
-            className={validMatch && matchPwd ? "valid" : "hide"}
+            className={validName ? "valid" : "hide"}
           />
           <FontAwesomeIcon
             icon={faTimes}
-            className={validMatch || matchPwd ? "hide" : "invalid"}
+            className={validMatch || !user ? "hide" : "invalid"}
           />
         </label>
         <input
