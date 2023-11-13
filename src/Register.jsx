@@ -129,6 +129,9 @@ const Register = () => {
           <span aria-label="dollar sign">$</span>{" "}
           <span aria-label="percent">%</span>
         </p>
+        <label htmlFor="">
+          
+        </label>
       </form>
     </>
   );
