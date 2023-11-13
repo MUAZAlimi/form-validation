@@ -38,7 +38,7 @@ const Register = () => {
   }, [user]);
   useEffect(() => {
     setValidPwd(PWD_REGEX.test(pwd));
-    setValidMatch(pwd === matchPwd)
+    setValidMatch(pwd === matchPwd);
   }, [pwd, matchPwd]);
   useEffect(() => {
     setErrMsg("");
@@ -54,6 +54,7 @@ const Register = () => {
         >
           {errMsg}{" "}
         </p>
+        <h1>Register</h1>
         <form>
           <label htmlFor="username">
             username:
@@ -152,10 +153,14 @@ const Register = () => {
             onFocus={() => setMatchFocus(true)}
             onBlur={() => setMatchFocus(false)}
           />
-          <p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
+          <p
+            id="confirmnote"
+            className={matchFocus && !validMatch ? "instructions" : "offscreen"}
+          >
             <FontAwesomeIcon icon={faInfoCircle} />
             Must match the first password input field.
           </p>
+          <button disabled={!validName || !validPwd ? true : false}>Sign Up</button>
         </form>
       </section>
     </>
