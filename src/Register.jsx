@@ -44,6 +44,18 @@ const Register = () => {
     setErrMsg("");
   }, [user, pwd, matchPwd]);
 
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const v1 = USER_REGEX.text(user);
+    const v2 = PWD_REGEX.test(pwd);
+    if(!v1 || !v2) {
+      setErrMsg('invalid Entry');
+      return;
+    }
+    console.log(user, pwd)
+    setSuccess(true)
+  }
+
   return (
     <>
       <section>
@@ -55,7 +67,7 @@ const Register = () => {
           {errMsg}{" "}
         </p>
         <h1>Register</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <label htmlFor="username">
             username:
             <FontAwesomeIcon
@@ -162,6 +174,12 @@ const Register = () => {
           </p>
           <button disabled={!validName || !validPwd ? true : false}>Sign Up</button>
         </form>
+        <p>
+           Already Registered? <br />
+           <span className="line">
+            <a href="#">Sign in</a>
+           </span>
+        </p>
       </section>
     </>
   );
