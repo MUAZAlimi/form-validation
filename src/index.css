@@ -52,7 +52,6 @@ a:visited {
 button {
   padding: 0.5rem;
   cursor: pointer;
-  color: #fff;
 }
 
 input[type="text"],
