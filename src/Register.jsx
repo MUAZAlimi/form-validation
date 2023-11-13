@@ -64,6 +64,15 @@ const Register = () => {
     <>
     {success ? (
       <section>
+        <h1>Success</h1>
+        <p>
+          <a href="./Register">Sign in</a>
+        </p>
+      </section>
+
+    ) :(
+
+      <section>
         <p
           ref={errRef}
           className={errMsg ? "errmsg" : "offscreen"}
@@ -186,7 +195,7 @@ const Register = () => {
            </span>
         </p>
       </section>
-    ) : }
+    )}
     </>
   );
 };
