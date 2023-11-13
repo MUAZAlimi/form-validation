@@ -46,10 +46,10 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const v1 = USER_REGEX.text(user);
+    const v1 = USER_REGEX.test(user);
     const v2 = PWD_REGEX.test(pwd);
     if(!v1 || !v2) {
-      setErrMsg('invalid Entry');
+      setErrMsg('Invalid Entry');
       return;
     }
     console.log(user, pwd)
@@ -62,6 +62,7 @@ const Register = () => {
 
   return (
     <>
+    {success ? (
       <section>
         <p
           ref={errRef}
@@ -185,6 +186,7 @@ const Register = () => {
            </span>
         </p>
       </section>
+    ) : }
     </>
   );
 };
