@@ -130,7 +130,7 @@ const Register = () => {
           <span aria-label="percent">%</span>
         </p>
         <label htmlFor="">
-          
+            
         </label>
       </form>
     </>
